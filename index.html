@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>METTLEGRIT FITNESS — Forge Your Best Self</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Local CSS Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="images/Mettle-Grit-Fitness-ico.png" alt="Mettle Grit" class="logo-img">METTLE<span>GRIT</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#programs">Programs</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#trainers">Trainers</a></li>
+                <li><a href="#" class="btn btn-primary" onclick="openModal('Pro')">Join Now</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <p class="hero-tag">Open 16 hours — No Hidden Fees</p>
+                <h1>Forge Your <span>Strongest</span> Self</h1>
+                <p>World-class equipment, expert trainers, and a community that pushes you further. Start your transformation today.</p>
+                <div class="hero-buttons">
+                    <a href="#pricing" class="btn btn-primary">Start Free Trial</a>
+                    <a href="#schedule" class="btn btn-outline">View Schedule</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS BAR -->
+    <section class="stats-bar">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item fade-in">
+                    <h3>1K+</h3>
+                    <p>Active Members</p>
+                </div>
+                <div class="stat-item fade-in">
+                    <h3>5+</h3>
+                    <p>Expert Trainers</p>
+                </div>
+                <div class="stat-item fade-in">
+                    <h3>20+</h3>
+                    <p>Weekly Classes</p>
+                </div>
+                <div class="stat-item fade-in">
+                    <h3>1</h3>
+                    <p>Location</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROGRAMS -->
+    <section class="section" id="programs">
+        <div class="container">
+            <div class="section-header fade-in">
+                <p class="section-tag">Our Programs</p>
+                <h2>Train Your Way</h2>
+                <p>From high-intensity circuits to mindful recovery — we have a program for every goal.</p>
+            </div>
+            <div class="programs-grid">
+                <div class="program-card fade-in">
+                    <div class="program-card-img" style="background-image: url('https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=600&q=80')"></div>
+                    <div class="program-card-body">
+                        <h3>Strength & Power</h3>
+                        <p>Build raw strength with free weights, machines, and progressive programming designed by certified coaches.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+                <div class="program-card fade-in">
+                    <div class="program-card-img" style="background-image: url('https://images.unsplash.com/photo-1609132718484-cc9068739f3a?w=600&q=80')"></div>
+                    <div class="program-card-body">
+                        <h3>HIIT & Cardio</h3>
+                        <p>Burn calories and boost endurance with high-intensity interval training and dynamic group sessions.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+                <div class="program-card fade-in">
+                    <div class="program-card-img" style="background-image: url('https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&q=80')"></div>
+                    <div class="program-card-body">
+                        <h3>Yoga & Recovery</h3>
+                        <p>Improve flexibility, reduce injury risk, and recover faster with guided yoga and mobility classes.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+                <div class="program-card fade-in">
+                    <div class="program-card-img" style="background-image: url('https://images.unsplash.com/photo-1549576490-b0b4831ef60a?w=600&q=80')"></div>
+                    <div class="program-card-body">
+                        <h3>Personal Training</h3>
+                        <p>One-on-one coaching tailored to your goals with customized nutrition and training plans.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CLASS SCHEDULE -->
+    <section class="section timetable-section" id="schedule">
+        <div class="container">
+            <div class="section-header fade-in">
+                <p class="section-tag">Class Schedule</p>
+                <h2>Find Your Class</h2>
+                <p>Book your spot in real time. Walk in or reserve ahead — your call.</p>
+            </div>
+            <div class="timetable-tabs fade-in">
+                <button class="timetable-tab active" data-day="mon">Monday</button>
+                <button class="timetable-tab" data-day="tue">Tuesday</button>
+                <button class="timetable-tab" data-day="wed">Wednesday</button>
+                <button class="timetable-tab" data-day="thu">Thursday</button>
+                <button class="timetable-tab" data-day="fri">Friday</button>
+                <button class="timetable-tab" data-day="sat">Saturday</button>
+            </div>
+            <!-- Monday -->
+            <div class="timetable-grid active" id="mon">
+                <div class="class-card">
+                    <p class="time">6:00 AM</p>
+                    <h4>Morning HIIT Blast</h4>
+                    <p class="instructor">with Coach Sarah</p>
+                    <p class="spots"><span>4</span> spots left</p>
+                </div>
+                <div class="class-card">
+                    <p class="time">8:00 AM</p>
+                    <h4>Power Lifting</h4>
+                    <p class="instructor">with Coach Alex</p>
+                    <p class="spots"><span>8</span> spots left</p>
+                </div>
+                <div class="class-card">
+                    <p class="time">12:00 PM</p>
+                    <h4>Lunch Express Cardio</h4>
+                    <p class="instructor">with Coach Jen</p>
+                    <p class="spots"><span>12</span> spots left</p>
+                </div>
+                <div class="class-card">
+                    <p class="time">5:30 PM</p>
+                    <h4>Strength Fundamentals</h4>
+                    <p class="instructor">with Coach Alex</p>
+                    <p class="spots"><span>3</span> spots left</p>
+                </div>
+                <div class="class-card">
+                    <p class="time">7:00 PM</p>
+                    <h4>Yoga Flow</h4>
+                    <p class="instructor">with Coach Yvonne</p>
+                    <p class="spots"><span>10</span> spots left</p>
+                </div>
+            </div>
+            <!-- Tuesday -->
+            <div class="timetable-grid" id="tue">
+                <div class="class-card">
+                    <p class="time">6:00 AM</p>
+                    <h4>Tabata Torch</h4>
+                    <p class="instructor">with Coach Sarah</p>
+                    <p class="spots"><span>6</span> spots left</p>
+                </div>
+                <div class="class-card">
+                    <p class="time">10:00 AM</p>
+                    <h4>Yoga & Mobility</h4>
+                    <p class="instructor">with Coach Yvonne</p>
+                    <p class="spots"><span>15</span> spots left</p>
+                </div>
+                <div class="class-card">
+                    <p class="time">6:00 PM</p>
+                    <h4>Boxing Fit</h4>
+                    <p class="instructor">with Coach Jack</p>
+                    <p class="spots"><span>2</span> spots left</p>
+                </div>
+            </div>
+            <!-- Wednesday -->
+            <div class="timetable-grid" id="wed">
+                <div class="class-card">
+                    <p class="time">7:00 AM</p>
+                    <h4>Full Body Burn</h4>
+                    <p class="instructor">with Coach Jen</p>
+                    <p class="spots"><span>5</span> spots left</p>
+                </div>
+                <div class="class-card">
+                    <p class="time">12:00 PM</p>
+                    <h4>Power Hour</h4>
+                    <p class="instructor">with Coach Alex</p>
+                    <p class="spots"><span>7</span> spots left</p>
+                </div>
+                <div class="class-card">
+                    <p class="time">6:30 PM</p>
+                    <h4>Spin & Tone</h4>
+                    <p class="instructor">with Coach Lea</p>
+                    <p class="spots"><span>9</span> spots left</p>
+                </div>
+            </div>
+            <!-- Thursday -->
+            <div class="timetable-grid" id="thu">
+                <div class="class-card">
+                    <p class="time">6:00 AM</p>
+                    <h4>Morning HIIT Blast</h4>
+                    <p class="instructor">with Coach Sarah</p>
+                    <p class="spots"><span>11</span> spots left</p>
+                </div>
+                <div class="class-card">
+                    <p class="time">10:00 AM</p>
+                    <h4>Functional Strength</h4>
+                    <p class="instructor">with Coach Alex</p>
+                    <p class="spots"><span>14</span> spots left</p>
+                </div>
+                <div class="class-card">
+                    <p class="time">5:00 PM</p>
+                    <h4>Iron Cardio</h4>
+                    <p class="instructor">with Coach Lea</p>
+                    <p class="spots"><span>14</span> spots left</p>
+                </div>
+            </div>
+            <!-- Friday -->
+            <div class="timetable-grid" id="fri">
+                <div class="class-card">
+                    <p class="time">6:00 AM</p>
+                    <h4>Early Bird HIIT</h4>
+                    <p class="instructor">with Coach Sarah</p>
+                    <p class="spots"><span>5</span> spots left</p>
+                </div>
+                <div class="class-card">
+                    <p class="time">10:00 AM</p>
+                    <h4>Functional Strength</h4>
+                    <p class="instructor">with Coach Marcus</p>
+                    <p class="spots"><span>9</span> spots left</p>
+                </div>
+                <div class="class-card">
+                    <p class="time">5:00 PM</p>
+                    <h4>Yoga & Stretch</h4>
+                    <p class="instructor">with Coach Aria</p>
+                    <p class="spots"><span>12</span> spots left</p>
+                </div>
+            </div>
+            <!-- Saturday -->
+            <div class="timetable-grid" id="sat">
+                <div class="class-card">
+                    <p class="time">8:00 AM</p>
+                    <h4>Weekend Warrior</h4>
+                    <p class="instructor">with Coach Jack</p>
+                    <p class="spots"><span>10</span> spots left</p>
+                </div>
+                <div class="class-card">
+                    <p class="time">10:00 AM</p>
+                    <h4>Community Class</h4>
+                    <p class="instructor">with Coach Yvonne</p>
+                    <p class="spots"><span>20</span> spots left</p>
+                </div>
+                <div class="class-card">
+                    <p class="time">12:00 PM</p>
+                    <h4>Open Gym</h4>
+                    <p class="instructor">Staffed</p>
+                    <p class="spots"><span>Unlimited</span> spots</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="section" id="pricing">
+        <div class="container">
+            <div class="section-header fade-in">
+                <p class="section-tag">Membership Plans</p>
+                <h2>Invest In Yourself</h2>
+                <p>No hidden fees. Cancel anytime. Choose the plan that fits your goals.</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card fade-in">
+                    <h3>Basic</h3>
+                    <p class="price">K150<span>/mo</span></p>
+                    <ul class="features">
+                        <li>Access to gym floor</li>
+                        <li>Locker room access</li>
+                        <li>Standard hours (5AM - 9PM)</li>
+                        <li>1 Group class per week</li>
+                    </ul>
+                    <button class="btn btn-outline" onclick="openModal('Basic')" style="width: 100%;">Choose Basic</button>
+                </div>
+                <div class="pricing-card featured fade-in">
+                    <h3>Pro</h3>
+                    <p class="price">K300<span>/mo</span></p>
+                    <ul class="features">
+                        <li>16 hours Gym access</li>
+                        <li>Unlimited group classes</li>
+                        <li>Sauna & Recovery zone</li>
+                        <li>1 Free PT session/month</li>
+                        <li>Guest pass (1/month)</li>
+                    </ul>
+                    <button class="btn btn-primary" onclick="openModal('Pro')" style="width: 100%;">Choose Pro</button>
+                </div>
+                <div class="pricing-card fade-in">
+                    <h3>Elite</h3>
+                    <p class="price">K520<span>/mo</span></p>
+                    <ul class="features">
+                        <li>All Pro benefits</li>
+                        <li>4 PT sessions/month</li>
+                        <li>Nutrition planning</li>
+                        <li>Priority booking</li>
+                        <li>Unlimited guest passes</li>
+                    </ul>
+                    <button class="btn btn-outline" onclick="openModal('Elite')" style="width: 100%;">Choose Elite</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRAINERS -->
+    <section class="section" id="trainers" style="background: var(--dark-card);">
+        <div class="container">
+            <div class="section-header fade-in">
+                <p class="section-tag">Our Team</p>
+                <h2>Meet The Experts</h2>
+                <p>Certified coaches dedicated to helping you reach your peak.</p>
+            </div>
+            <div class="trainers-grid">
+                <div class="trainer-card fade-in">
+                    <div class="trainer-card-img" style="background-image: url('https://images.unsplash.com/photo-1567013127542-490d757e51fc?w=600&q=80')"></div>
+                    <div class="trainer-card-body">
+                        <h3>Alex Tony</h3>
+                        <p class="role">Head Strength Coach</p>
+                    </div>
+                </div>
+                <div class="trainer-card fade-in">
+                    <div class="trainer-card-img" style="background-image: url('https://images.unsplash.com/photo-1594381898411-846e7d193883?w=600&q=80')"></div>
+                    <div class="trainer-card-body">
+                        <h3>Sarah Jenkins</h3>
+                        <p class="role">HIIT & Cardio Specialist</p>
+                    </div>
+                </div>
+                <div class="trainer-card fade-in">
+                    <div class="trainer-card-img" style="background-image: url('https://images.unsplash.com/photo-1518611012118-696072aa579a?w=600&q=80')"></div>
+                    <div class="trainer-card-body">
+                        <h3>Aria Lite</h3>
+                        <p class="role">Yoga & Mobility</p>
+                    </div>
+                </div>
+                <div class="trainer-card fade-in">
+                    <div class="trainer-card-img" style="background-image: url('https://images.unsplash.com/photo-1534368786749-b63e05c977b7?w=600&q=80')"></div>
+                    <div class="trainer-card-body">
+                        <h3>Jack Murray</h3>
+                        <p class="role">Boxing & Conditioning</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="section testimonials-section" id="testimonials">
+        <div class="container">
+            <div class="section-header fade-in">
+                <p class="section-tag">Success Stories</p>
+                <h2>Real Results</h2>
+                <p>Hear from the community that pushes each other forward.</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card fade-in">
+                    <div class="stars">★★★★★</div>
+                    <p>"I've tried every gym chain out there. METTLEGRIT is the first place where I actually felt like I belonged. The coaches know your name and the equipment is always top-tier."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">C</div>
+                        <div>
+                            <p class="name">Germaine Morgan</p>
+                            <p class="detail">Member for 2 years</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card fade-in">
+                    <div class="stars">★★★★★</div>
+                    <p>"The HIIT classes changed my life. I lost 30lbs in 6 months and gained a level of strength I never thought possible. The community keeps me accountable."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">K</div>
+                        <div>
+                            <p class="name">Keziah Murray</p>
+                            <p class="detail">Member for 1 year</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card fade-in">
+                    <div class="stars">★★★★★</div>
+                    <p>"As a busy professional, the 16 hours access is a lifesaver. I can get a solid workout at 5AM before work without feeling rushed. The Pro membership is worth every penny."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">T</div>
+                        <div>
+                            <p class="name">Theodorus Bona Murray</p>
+                            <p class="detail">Member for 3 years</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA BANNER -->
+    <section class="cta-banner" id="contact">
+        <div class="container">
+            <h2>Ready To Start?</h2>
+            <p>Join today and get your first week absolutely free. No commitment required.</p>
+            <button class="btn" onclick="openModal('Pro')">Claim Free Trial</button>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>METTLE<span style="color: var(--primary)">GRIT</span></h4>
+                    <p>Forging stronger bodies and minds since 2026. Join the movement.</p>
+                    <div class="social-icons">
+                        <a href="https://x.com/MettleGrit26" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="http://tiktok.com/@mettle.grit4" class="social-icon" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://www.strava.com/athletes/1438925107" class="social-icon" aria-label="strava"><i class="fab fa-strava"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <a href="#programs">Programs</a>
+                    <a href="#schedule">Schedule</a>
+                    <a href="#pricing">Membership</a>
+                    <a href="#trainers">Trainers</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <!-- Functional Call Button -->
+                    <a href="tel:+67571921809" class="contact-btn">
+                        <i class="fas fa-phone-alt"></i> (+675) 7192-1809
+                    </a>
+                    <!-- Functional Email Button -->
+                    <a href="mailto:info.mettlegrit@gmail.com" class="contact-btn">
+                        <i class="fas fa-envelope"></i> info.mettlegrit@gmail.com
+                    </a>
+                </div>
+                <div class="footer-col">
+                    <h4>Hours</h4>
+                    <p>Mon-Fri: 5AM - 9PM</p>
+                    <p>Sat: 8AM - 8PM</p>
+                    <p>Sun: Close</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Mettle Grit Fitness. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- PAYMENT MODAL -->
+    <div class="modal-overlay" id="paymentModal">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeModal()">&times;</button>
+            
+            <!-- Payment Form -->
+            <div id="paymentForm">
+                <div class="modal-header">
+                    <h3>Checkout</h3>
+                </div>
+                
+                <div class="selected-plan-summary">
+                    <div>
+                        <span class="plan-name" id="modalPlanName">Pro</span> Membership
+                    </div>
+                    <div class="plan-cost" id="modalPlanCost">K150/mo</div>
+                </div>
+
+                <form id="checkoutForm" onsubmit="processPayment(event)">
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName" placeholder="Carmel Lite" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" placeholder="carmel@example.com" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="cardNumber">Card Number</label>
+                        <input type="text" id="cardNumber" placeholder="0000 0000 0000 0000" maxlength="19" required oninput="formatCardNumber(this)">
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="expiry">Expiry Date</label>
+                            <input type="text" id="expiry" placeholder="MM/YY" maxlength="5" required oninput="formatExpiry(this)">
+                        </div>
+                        <div class="form-group">
+                            <label for="cvv">CVV</label>
+                            <input type="text" id="cvv" placeholder="123" maxlength="3" required>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary pay-btn" id="payBtn">
+                        Pay Now
+                    </button>
+                </form>
+            </div>
+
+            <!-- Success State -->
+            <div class="payment-success" id="paymentSuccess">
+                <div class="success-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h3>Payment Successful!</h3>
+                <p>Welcome to the Mettle Grit family.</p>
+                <p style="margin-top: 10px; font-size: 0.9rem;">A confirmation email has been sent to <span id="confirmedEmail"></span>.</p>
+                <button class="btn btn-primary" style="margin-top: 24px;" onclick="closeModal()">Back to Home</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
